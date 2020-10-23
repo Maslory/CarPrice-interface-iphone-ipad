@@ -1,0 +1,77 @@
+
+@import './mixin.scss';
+
+.content_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main{
+@include flex_all_center;
+position: relative;
+ z-index: 1;
+ margin-top: 15px;
+
+ .device{
+   position: relative;
+   background-size: contain !important;
+   z-index: 2;
+   pointer-events: none;
+ }
+
+ .display{
+   position: absolute;
+   background: url('./img/apple&ipad/background.jpg');
+   background-size: cover;
+   z-index: 1;
+   overflow: hidden;
+      // TODO - добавить после настройки экранов и добавить slider overflow: hidden;
+   .top_block{
+     width: 5%;
+     height: 5%;
+     @include block_interface;
+   }
+   .main_block{
+     height: 75%;
+     width: 100%;
+     .items_block{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      height: 100%;
+     width: 100%;
+     @include block_interface;
+      .item_app{
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 70px;
+        white-space: nowrap;
+        color: #fff;
+        font-family: Helvetica;
+        font-size: 0.6em;
+        img{
+          width: 70px;
+          height: 70px;
+        }
+      }
+     }
+   }
+  //  .bottom_block{
+  //    height: 5%;
+  //    width: 100%;
+  //    @include block_interface;
+  //  }    
+   .menu{
+     height: 20%;
+     width: 100%;
+    @include block_interface;
+   }   
+ }
+}

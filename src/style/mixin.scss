@@ -1,0 +1,65 @@
+
+@mixin block_interface {
+ padding-left: 3%;
+ padding-right: 3%;
+ box-sizing: border-box;
+}
+
+@mixin flex_all_center {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin ipad_horizontal {
+ .device{
+  width: 998px;
+  height: 768px;
+  background: url('./img/apple&ipad/ipad-mini-horizontal.png') no-repeat;
+}
+.display{
+  width: 812px;
+  height: 610px;
+  
+}
+}
+
+@mixin ipad_vertical {
+ .device{
+  width: 768px;
+  height: 998px;
+  background: url('./img/apple&ipad/ipad-mini-vertifical.png') no-repeat;
+}
+.display{
+  top: 87px;
+  width: 610px;
+  height: 813px;
+}
+}
+
+@mixin iphone_horizontal {
+ .device{
+  width: 569px;
+  height: 290px;
+  background: url('./img/apple&ipad/iphone5-horizontal.png') no-repeat;
+}
+.display{
+  width: 403px;
+  overflow: hidden;
+  height: 225px;
+  top: 26px;
+}
+}
+
+@mixin iphone_vertical {
+ .device{
+  width: 275px;
+  height: 569px;
+  background: url('./img/apple&ipad/iphone5-vertical.png') no-repeat;
+}
+.display{
+  width: 228px;
+  height: 390px;
+  top: 95px;
+}
+}

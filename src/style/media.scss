@@ -1,0 +1,18 @@
+@import './mixin.scss';
+
+@media (min-width: 1024px){
+ @include ipad_horizontal;
+}
+
+@media screen and (max-width: 1024px){
+ @include ipad_vertical;
+}
+
+@media screen and (max-width: 768px){
+ @include iphone_horizontal;
+}
+
+@media screen and (max-width: 568px){
+ @include iphone_vertical;
+}
+

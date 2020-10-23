@@ -1,0 +1,16 @@
+.disabled{
+ pointer-events: none !important;
+}
+
+.swiper-pagination{
+ bottom: -50px !important;
+ z-index: 999 !important;
+}
+
+.swiper-container{
+ overflow: visible !important;
+}
+
+:root{
+ --swiper-theme-color: #fff !important;
+}

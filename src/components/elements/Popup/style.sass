@@ -1,0 +1,75 @@
+.grey_background
+ background: #333333b6
+ width: 100vw
+ height: 100vh
+ position: fixed
+ left: 0
+ top: 0
+ z-index: 1999
+ display: flex
+ justify-content: center
+ align-items: center
+ .popup
+    .popup__content__footer
+        text-align: center
+        color: #ffffff
+        font-size: 0.8em
+        width: 100%
+    .popup__content
+        display: flex
+        flex-direction: row
+        width: 100vw
+        justify-content: space-around
+        align-items: center
+    img
+        -webkit-touch-callout: none
+        -webkit-user-select: none  
+        -khtml-user-select: none  
+        -moz-user-select: none  
+        -ms-user-select: none     
+        user-select: none          
+    .popup__content__arrow
+        display: flex
+        align-items: center
+        height: 50vh
+    svg
+        fill: #fff
+   
+@media ( max-width: 300px)
+ .popup__content__arrow
+    height: 100%
+ .popup__content__img
+    width: 100vw  
+
+
+@media ( min-width: 300px)
+ .popup__content__arrow
+    display: block  
+ .popup__content__img
+    min-width: 250px
+    max-width: 1200px
+    width: 45vw  
+   
+@media ( max-device-width: 576px)
+ .popup__content__arrow
+    height: 100%
+ .popup__content__img
+    width: 100vw  
+
+
+@media ( max-device-width: 576px)
+ .popup__content__arrow
+    display: block  
+ .popup__content__img
+    min-width: 250px
+    max-width: 1200px
+    width: 45vw  
+   
+
+.no_copy
+    -webkit-touch-callout: none
+    -webkit-user-select: none  
+    -khtml-user-select: none  
+    -moz-user-select: none  
+    -ms-user-select: none     
+    user-select: none    
