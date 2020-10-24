@@ -12,7 +12,7 @@ function Time() {
    }, 100)
   },[])
   return (
-    <div>
+    <div  >
       {time}
     </div>
   );

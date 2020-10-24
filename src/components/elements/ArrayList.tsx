@@ -2,11 +2,11 @@ import React from 'react';
 
 
 function ArrayList(props:any) {
-  const {array} = props;
+  const {array, displayNumber} = props;
 
-  return array.map((el:any) => {
+  return array.map((el:any, index:any) => {
       return     props.children({
-        el: el
+        el: el, index: index, displayNumber:displayNumber
        })
      })
 }

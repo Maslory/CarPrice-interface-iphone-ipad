@@ -29,9 +29,20 @@ position: relative;
    overflow: hidden;
       // TODO - добавить после настройки экранов и добавить slider overflow: hidden;
    .top_block{
-     width: 5%;
+     width: 100%;
+     padding-top: 1px;
+     padding-left: 5px;
+     padding-right: 5px;
+     padding-top: 4px;
+     box-sizing: border-box;
      height: 5%;
-     @include block_interface;
+     display: flex;
+     justify-content: space-between;
+     align-items: top;
+     color: #fff; 
+     text-align: center; 
+     font-family: 'Helvetica'; 
+     font-size: 0.5em;
    }
    .main_block{
      height: 75%;
@@ -48,9 +59,9 @@ position: relative;
         flex-direction: row;
         flex-direction: column;
         text-align: center;
-        padding: 1.5%;
-        padding-left: 5%;
-        padding-right: 5%;
+        margin: 1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
         width: 70px;
         white-space: nowrap;
         color: #fff;
@@ -74,4 +85,22 @@ position: relative;
     @include block_interface;
    }   
  }
+}
+
+#on-mouse-move_left-side_slide-next{
+  position: absolute;
+  height: 100%;
+  width: 5%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#on-mouse-move_right-side_slide-next{
+  z-index: 1000;
+  position: absolute;
+  height: 100%;
+  width: 5%;
+  top: 0;
+  right: 0;
 }
