@@ -1,0 +1,26 @@
+.info{
+  font-family: Helvetica;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  div{
+    max-width: 1100px;
+  }
+  .info__header{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 2%;
+  }
+  .info__main-block{
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-top: 10px;
+    div{
+      box-sizing: content-box;
+      padding-left: 5%;
+    }
+  }
+ }
