@@ -20,6 +20,33 @@
 .display{
   width: 802px;
   height: 610px;
+  .item_app{
+    margin: 1.5%;
+    margin-left: 4.2%;
+    margin-right: 4.2%;
+    width: 80px;
+    img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .menu{
+    .item_app{
+      margin: 1.5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 80px;
+      font-size: 0.2em !important;
+     
+      img{
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .swiper-pagination{
+    margin-top: 2.5%;
+   }
 }
 }
 
@@ -33,6 +60,34 @@
   top: 87px;
   width: 610px;
   height: 813px;
+  .item_app{
+    margin: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80px;
+
+    img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .menu{
+    .item_app{
+      margin-top: 4.5%;
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 90px;
+      font-size: 1em !important;
+
+      img{
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+  .swiper-pagination{
+    margin-top: 4.5%;
+   }
 }
 }
 
@@ -47,6 +102,39 @@
   overflow: hidden;
   height: 225px;
   top: 26px;
+  .item_app{
+    margin: 1.2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 35px;
+    font-size: 0.2em !important;
+   
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .menu{
+    display: none !important;
+    .item_app:last-child{
+      display: none;
+    }
+    .item_app{
+      margin: 1.5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 50px;
+      font-size: 0.2em !important;
+     
+      img{
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .swiper-pagination{
+    margin-top: 1%;
+   }
 }
 }
 
@@ -60,5 +148,38 @@
   width: 228px;
   height: 390px;
   top: 95px;
+  .item_app{
+    font-size: 0.3em !important;
+    margin: 1.5%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 40px;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .menu{
+    display: flex !important;
+    .item_app{
+      margin: 1.5%;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 40px;
+      font-size: 0.2em !important;
+     
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .swiper-pagination{
+    margin-top: 7%;
+   }
 }
+
 }
+

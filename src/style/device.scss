@@ -45,7 +45,7 @@ position: relative;
      font-size: 0.5em;
    }
    .main_block{
-     height: 75%;
+     height: 95%;
      width: 100%;
      .items_block{
       display: flex;
@@ -53,36 +53,36 @@ position: relative;
       flex-wrap: wrap;
       height: 100%;
      width: 100%;
+   
      @include block_interface;
       .item_app{
         display: flex;
         flex-direction: row;
         flex-direction: column;
-        text-align: center;
-        margin: 1.5%;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 70px;
         white-space: nowrap;
         color: #fff;
         font-family: Helvetica;
         font-size: 0.6em;
-        img{
-          width: 70px;
-          height: 70px;
+        div{
+          overflow: hidden;
+          text-overflow: ellipsis ;
         }
       }
      }
    }
-  //  .bottom_block{
-  //    height: 5%;
-  //    width: 100%;
-  //    @include block_interface;
-  //  }    
+  
    .menu{
-     height: 20%;
-     width: 100%;
-    @include block_interface;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    white-space: nowrap;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 0.6em;
+    position: absolute;
+    bottom: 0;
    }   
  }
 }

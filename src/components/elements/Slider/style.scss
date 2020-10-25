@@ -4,8 +4,8 @@
 }
 
 .swiper-pagination{
- bottom: -50px !important;
- z-index: 999 !important;
+ position: relative !important;
+ margin-top: 7%;
 }
 
 .swiper-container{

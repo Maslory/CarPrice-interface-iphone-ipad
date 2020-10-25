@@ -10,8 +10,8 @@ SwiperCore.use([Pagination])
 
 ReactDOM.render(
   <React.StrictMode>
-     <DndProvider backend={HTML5Backend}  >
-    <App />
+    <DndProvider backend={HTML5Backend}  >
+      <App />
     </DndProvider>
   </React.StrictMode>,
   document.getElementById('root')
