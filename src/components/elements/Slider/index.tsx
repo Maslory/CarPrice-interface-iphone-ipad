@@ -78,21 +78,7 @@ const Slider = () => {
   const [arrAppXY, setArrAppXY] = useState(setAppsOnDisplay())
   const [selectedApp, setSelectedApp] = useState({ name: '', x: 0, y: 0 })
   const [swiper, setSwiper] = useState(null);
-  const [translate, updateTranslate] = useState(0);
-  const [transition, updateTransition] = useState(0);
 
-  useEffect(() => {
-    if (swiper) {
-      // @ts-ignore
-      swiper.on('setTranslate', (t) => {
-        updateTranslate(t);
-      });
-      // @ts-ignore
-      swiper.on('setTransition', (t) => {
-        updateTransition(t);
-      });
-    }
-  }, [swiper])
 
 
   function moveApp(name: string, toX: any, toY: any, setStatePositions: any) { // Функция для изменения позиции приложения
