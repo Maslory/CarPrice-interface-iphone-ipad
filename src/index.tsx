@@ -8,7 +8,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 import SwiperCore, { Pagination } from "swiper"
 SwiperCore.use([Pagination])
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <DndProvider backend={HTML5Backend}  >
       <App />

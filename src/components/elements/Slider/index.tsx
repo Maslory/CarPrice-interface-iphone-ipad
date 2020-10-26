@@ -88,7 +88,6 @@ const Slider = () => {
         return array_apps.map((app: any) => {
           if (toX === app.x && toY === app.y) {
             setFilteredApps(filteredApps.map((defaultIcon: any) => selectedApp.y === defaultIcon.y && selectedApp.x === defaultIcon.x ? { name: name, x: defaultIcon.x, y: defaultIcon.y } : defaultIcon))
-            console.log(toY, toX)
             return { name: selectedApp.name, x: toX, y: toY }
           }
           else if (selectedApp.x === app.x && selectedApp.y === app.y && toY !== -1) {
